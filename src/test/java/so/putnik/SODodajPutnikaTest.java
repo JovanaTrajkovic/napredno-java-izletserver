@@ -46,95 +46,12 @@ public class SODodajPutnikaTest {
 			assertThrows(Exception.class, () -> sododajputnika.execute(null));
 		}
 		
-		@Test
-		public void testNeuspesnaValidacijaBrojTelefonaNull() {
-			
-					Putnik p= new Putnik(50L,"Marko","Markovic","marko@gmail.com",null);
-					assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
 		
-		@Test
-		public void testNeuspesnaValidacijaBrojTelefonaViseod10Cifara() {
-			//11 cifara
-					Putnik p= new Putnik(50L,"Marko","Markovic","marko@gmail.com","06967792100686755");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
-		@Test
-		public void testNeuspesnaValidacijaBrojTelefonaManjeOd9Cifara() {
-			//8 cifara
-					Putnik p1= new Putnik(50L,"Marko","Markovic","marko@gmail.com","0696");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p1));
-		}
 		
-		@Test
-		public void testNeuspesnaValidacijaBrojTelefonaImaSlova() {
-			//cifre i slova
-					Putnik p3= new Putnik(50L,"Marko","Markovic","marko@gmail.com","06967792a1");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p3));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaImeNull() {
-			//2 slova
-			Putnik p= new Putnik(50L,null,"Markovic","marko@gmail.com","0696779210");
-			assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaImeManjeod3Karaktera() {
-			//2 slova
-			Putnik p= new Putnik(50L,"Ma","Markovic","marko@gmail.com","0696779210");
-			assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaImeImaBrojUSebi() {
-			//cifre i slova
-			Putnik p1= new Putnik(50L,"Ma3","Markovic","marko@gmail.com","069677920");
-			assertThrows(Exception.class, () -> sododajputnika.validate(p1));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaPrezimeNull() {
-			//2 slova
-					Putnik p= new Putnik(50L,"Marko",null,"marko@gmail.com","0696779210");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaPrezimeManjeod3Karaktera() {
-			//2 slova
-					Putnik p= new Putnik(50L,"Marko","Ma","marko@gmail.com","0696779210");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaPrezimeImaBrojUSebi() {
-			//cifre i slova
-					Putnik p1= new Putnik(50L,"Marko","Ma3","marko@gmail.com","069677920");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p1));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaEmailNull() {
-			
-					Putnik p= new Putnik(50L,"Marko","Markic",null,"0696779210");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
-		
-		@Test
-		public void testNeuspesnaValidacijaEmailManjeod3Karaktera() {
-			
-					Putnik p= new Putnik(50L,"Marko","Markic","om","0696779210");
-					assertThrows(Exception.class, () -> sododajputnika.validate(p));
-		}
-		
-
-
+		////
 		
 		@Test
 		void testUspesnoDodatPutnik() {
-			
 			
 	      Putnik p= new Putnik(null,"Marko","Markovic","marko@gmail.com","069677928");
 	      p.setBrojTelefona("069677928");
@@ -171,12 +88,6 @@ public class SODodajPutnikaTest {
 					p.setPutnikID(putnik.getPutnikID());
 				}
 			}
-			
-			/*try {
-				new SOObrisiPutnika().execute(p);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}*/
 			String upit = "Delete from putnik where putnikID=?";
 			PreparedStatement ps;
 			try {

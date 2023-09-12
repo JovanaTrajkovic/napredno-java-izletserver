@@ -55,10 +55,7 @@ private ArrayList<Izlet> izleti;
 
 			assertEquals(6,izleti.size());
 			
-			
-					
-
-	        assertTrue(izleti.get(5).getIzletID().equals(6L) &&
+		    assertTrue(izleti.get(5).getIzletID().equals(6L) &&
 					izleti.get(5).getKategorija().equals(Kategorija.VanSezone) &&
 					izleti.get(5).getMesto().getNazivMesta().equals("Manastir Ravanica")  ); 
 			
@@ -66,9 +63,7 @@ private ArrayList<Izlet> izleti;
 					izleti.get(4).getKategorija().equals(Kategorija.Sezona) && 
                     izleti.get(4).getMesto().getNazivMesta().equals("Felix Romuliana") ); 
 			
-	
-			
-			assertTrue(izleti.get(0).getIzletID().equals(1L) &&
+	    	assertTrue(izleti.get(0).getIzletID().equals(1L) &&
 					izleti.get(0).getKategorija().equals(Kategorija.Sezona) && 
                     izleti.get(0).getMesto().getNazivMesta().equals("Tara") ); 
 			

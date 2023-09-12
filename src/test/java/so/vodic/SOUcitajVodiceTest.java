@@ -69,8 +69,6 @@ class SOUcitajVodiceTest {
 					vodici.get(1).getBrojTelefona().equals("0611234594")  && 
 					vodici.get(1).getVodicID().equals(2L));
 			
-			
-			
 			assertTrue(vodici.get(2).getImeVodica().equalsIgnoreCase("darko") && 
 					vodici.get(2).getPrezimeVodica().equalsIgnoreCase("daric") &&
 					vodici.get(2).getBrojTelefona().equals("0611234593")  && 

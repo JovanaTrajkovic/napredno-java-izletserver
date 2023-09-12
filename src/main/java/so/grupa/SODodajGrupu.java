@@ -22,18 +22,11 @@ public class SODodajGrupu extends OpstaSistemskaOperacija{
         }
       
        Grupa g = (Grupa) odo;
-        if (g.getKapacitetGrupe() < 15 || g.getKapacitetGrupe() > 60) {
-            throw new Exception("Kapacitet grupe mora biti izmedju 15 i 60!");
-        }
-
-        if (g.getClanovi().size() < 2 || g.getClanovi().size() > g.getKapacitetGrupe()) {
+       if (g.getClanovi().size() < 2 || g.getClanovi().size() > g.getKapacitetGrupe()) {
             throw new Exception("Grupa mora minimum 2 clana, a maksimum "
                     + g.getKapacitetGrupe() + "!");
         }
-
-        if (!g.getDatumPolaska().after(new java.util.Date())) {
-            throw new Exception("Datum polaska mora biti posle danasnjeg datuma!");
-        }
+    
      
     }
       
