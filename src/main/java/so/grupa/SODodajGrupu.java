@@ -26,8 +26,8 @@ public class SODodajGrupu extends OpstaSistemskaOperacija{
             throw new Exception("Kapacitet grupe mora biti izmedju 15 i 60!");
         }
 
-        if (g.getClanovi().size() < 10 || g.getClanovi().size() > g.getKapacitetGrupe()) {
-            throw new Exception("Grupa mora minimum 10 uclanova, a maksimum "
+        if (g.getClanovi().size() < 2 || g.getClanovi().size() > g.getKapacitetGrupe()) {
+            throw new Exception("Grupa mora minimum 2 clana, a maksimum "
                     + g.getKapacitetGrupe() + "!");
         }
 

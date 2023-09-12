@@ -1,4 +1,5 @@
 package so.clan;
+
 import db.DBBroker;
 import domen.Clan;
 import domen.OpstiDomenskiObjekat;
@@ -28,4 +29,6 @@ public class SOUcitajClanove extends OpstaSistemskaOperacija{
      public ArrayList<Clan> getLista() {
         return clanovi;
     }
+
+	
 }

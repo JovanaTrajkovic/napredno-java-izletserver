@@ -26,6 +26,7 @@ public class SOLogovanje extends OpstaSistemskaOperacija {
 
         ArrayList<Administrator> administratori  = (ArrayList<Administrator>) (ArrayList<?>)
                 DBBroker.getInstance().select(odo);
+        System.out.println(administratori.toArray());
 
         for (Administrator administrator : administratori) {
             if (administrator.getUsername().equals(a.getUsername())

@@ -29,4 +29,7 @@ public class SOUcitajPutnike  extends OpstaSistemskaOperacija{
      public ArrayList<Putnik> getLista() {
         return putnici;
     }
+
+	
 }
+

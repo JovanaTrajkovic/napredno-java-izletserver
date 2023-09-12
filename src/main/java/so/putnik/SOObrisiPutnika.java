@@ -1,4 +1,5 @@
 package so.putnik;
+import db.DBBroker;
 
 import db.DBBroker;
 import domen.OpstiDomenskiObjekat;
@@ -23,3 +24,4 @@ public class SOObrisiPutnika extends OpstaSistemskaOperacija{
         DBBroker.getInstance().delete(odo);
     }
 }
+
