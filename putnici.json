@@ -1,0 +1,32 @@
+[
+  {
+    "Ime putnika": "Milan",
+    "Prezime putnika": "Mikic",
+    "Email putnika": "milan@gmail.com",
+    "Broj telefona putnika": "0698023243"
+  },
+  {
+    "Ime putnika": "Anka",
+    "Prezime putnika": "Ankovic",
+    "Email putnika": "anka@gmail.com",
+    "Broj telefona putnika": "063858678"
+  },
+  {
+    "Ime putnika": "Tamara",
+    "Prezime putnika": "Tavic",
+    "Email putnika": "tamara@gmail.com",
+    "Broj telefona putnika": "063858670"
+  },
+  {
+    "Ime putnika": "Aleksandra",
+    "Prezime putnika": "Aleksic",
+    "Email putnika": "aleksandra@gmail.com",
+    "Broj telefona putnika": "063858671"
+  },
+  {
+    "Ime putnika": "Katarina",
+    "Prezime putnika": "Krstic",
+    "Email putnika": "katarina@gmail.com",
+    "Broj telefona putnika": "063858679"
+  }
+]
